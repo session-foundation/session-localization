@@ -1,0 +1,8 @@
+{
+  "name": "session-localization",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "NODE_VERSION_PLACEHOLDER"
+  }
+}
