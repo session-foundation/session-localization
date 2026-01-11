@@ -1,1 +1,3 @@
 scripts/.tsc/
+*.js
+*.js.map
