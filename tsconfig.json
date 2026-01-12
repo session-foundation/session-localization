@@ -15,8 +15,5 @@
     "esModuleInterop": true,
     "noEmit": true
   },
-  "include": [
-    "*.ts",
-    "generated/*.ts"
-  ]
+  "include": ["*.ts", "generated/*.ts"]
 }
