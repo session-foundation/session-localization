@@ -476,6 +476,7 @@ export type TokenSimpleNoArgs =
   'groupNameVisible' |
   'groupNotUpdatedWarning' |
   'groupPendingRemoval' |
+  'groupPermissionReadOnly' |
   'groupPromotedYou' |
   'groupRemovedYouGeneral' |
   'groupSetDisplayPicture' |

@@ -430,6 +430,7 @@ export const enSimpleNoArgs = {
   groupNameVisible: 'Group name is visible to all group members.',
   groupNotUpdatedWarning: 'This group has not been updated in over 30 days. You may experience issues sending messages or viewing group information.',
   groupPendingRemoval: 'Pending removal',
+  groupPermissionReadOnly: 'This group is read-only',
   groupPromotedYou: '<b>You</b> were promoted to Admin.',
   groupRemovedYouGeneral: 'You were removed from the group.',
   groupSetDisplayPicture: 'Set Group Display Picture',
@@ -1260,7 +1261,7 @@ export const enSimpleWithArgs = {
   urlOpenDescription: 'Are you sure you want to open this URL in your browser?<br/><br/><b>{url}</b>',
   viaPlatformWebsiteDescription: 'Change your plan using the {platform_account} you used to sign up with, via the <b><span>{platform} website</span></b> .',
   viaStoreWebsite: 'Via the {platform} website',
-  viaStoreWebsiteDescription: 'Update your Pro access using the {platform_account} you used to sign up with, via the <b><span>{platform_store}</span></b> website.',
+  viaStoreWebsiteDescription: 'Update your Pro access using the {platform_account} you used to sign up with, via the <b><span>{platform_store} website</span></b>.',
 } as const satisfies Record<TokenSimpleWithArgs, string>;
 
 /** English plural strings */
