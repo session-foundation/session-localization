@@ -178,7 +178,6 @@ export const enSimpleNoArgs = {
   cameraGrantAccessQr: 'Session needs camera access to scan QR codes',
   cancel: 'Cancel',
   cancelAccess: 'Cancel Pro',
-  cancelProPlan: 'Cancel Pro Plan',
   change: 'Change',
   changePasswordFail: 'Failed to change password',
   changePasswordModalDescription: 'Change your password for Session. Locally stored data will be re-encrypted with your new password.',
