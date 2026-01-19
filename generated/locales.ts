@@ -224,7 +224,6 @@ export type TokenSimpleNoArgs =
   'cameraGrantAccessQr' |
   'cancel' |
   'cancelAccess' |
-  'cancelProPlan' |
   'change' |
   'changePasswordFail' |
   'changePasswordModalDescription' |
