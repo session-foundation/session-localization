@@ -831,6 +831,7 @@ export type TokenSimpleNoArgs =
   'proRenewMaxPotential' |
   'proRenewPinMoreConversations' |
   'proRenewalUnsuccessful' |
+  'proRenewalUnsuccessfulTitle' |
   'proRenewingAction' |
   'proRequestedRefund' |
   'proSendMore' |
@@ -1281,6 +1282,7 @@ export type TokenSimpleWithArgs =
   'proRenewingNoAccessBilling' |
   'proTosDescription' |
   'proTosPrivacy' |
+  'proUnsuccessfulRenewalDescription' |
   'proUpdateAccessDescription' |
   'proUpdateAccessExpireDescription' |
   'proUpgradeDesktopLinked' |
@@ -1571,6 +1573,7 @@ export type TokensSimpleAndArgs = {
    proRenewingNoAccessBilling: WithIcon & { platform_store: string, platform_store_other: string, build_variant: string },
    proTosDescription: { action_type: string, activation_type: string, entity: string },
    proTosPrivacy: WithIcon,
+   proUnsuccessfulRenewalDescription: { platform_account: string, platform_store: string },
    proUpdateAccessDescription: WithDate & { current_plan_length: string, selected_plan_length_singular: string, selected_plan_length: string },
    proUpdateAccessExpireDescription: WithDate & { selected_plan_length: string },
    proUpgradeDesktopLinked: { platform_store: string, platform_store_other: string },
