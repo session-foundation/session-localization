@@ -54,7 +54,7 @@ export type PluralForm = 'zero' | 'one' | 'two' | 'few' | 'many' | 'other';
 export type PluralForms = Partial<Record<PluralForm, string>>;
 
 /** Token keys for simple strings without arguments */
-export type TokenSimpleNoArgs = 
+export type TokenSimpleNoArgs =
   'about' |
   'accept' |
   'accountIDCopy' |
@@ -1067,10 +1067,30 @@ export type TokenSimpleNoArgs =
   'yourCpuIsUnsupportedSSE42' |
   'yourRecoveryPassword' |
   'zoomFactor' |
-  'zoomFactorDescription';
+  'zoomFactorDescription'|
+  'serverUnbanUser'|
+  'globalUserUnbanFailed'|
+  'serverBanUser'|
+  'serverBanUserAndDeleteAll'|
+  'addUploadPermission'|
+  'clearUploadPermission'|
+  'userPermissionsChanged'|
+  'failedToChangeUserPermissions'|
+  'globalUserBanFailed'|
+  'communityChangePermissions'|
+  'communityPermissionAccessDescription'|
+  'communityPermissionAccessEnable'|
+  'communityPermissionReadDescription'|
+  'communityPermissionReadEnable'|
+  'communityPermissionUploadDescription'|
+  'communityPermissionUploadEnable'|
+  'communityPermissionWriteDescription'|
+  'communityPermissionWriteEnable' |
+  'communityChangePermissionsDescription'
+  ;
 
 /** Token keys for simple strings with arguments */
-export type TokenSimpleWithArgs = 
+export type TokenSimpleWithArgs =
   'accountIdShare' |
   'adminMorePromotedToAdmin' |
   'adminPromoteDescription' |
@@ -1310,7 +1330,7 @@ export type TokenSimpleWithArgs =
   'viaStoreWebsiteDescription';
 
 /** Token keys for plural strings */
-export type TokenPluralWithArgs = 
+export type TokenPluralWithArgs =
   'addAdmin' |
   'adminSelected' |
   'adminSendingPromotion' |
