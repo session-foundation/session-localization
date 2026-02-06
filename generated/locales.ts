@@ -1119,8 +1119,10 @@ export type TokenSimpleWithArgs =
   'clearMessagesGroupDescription' |
   'clearMessagesGroupDescriptionUpdated' |
   'commitHashDesktop' |
+  'communityBanUserDescription' |
   'communityJoinDescription' |
   'communityLeaveError' |
+  'communityUnbanUserDescription' |
   'contactDeleteDescription' |
   'conversationsDeleteDescription' |
   'conversationsEmpty' |
@@ -1410,8 +1412,10 @@ export type TokensSimpleAndArgs = {
    clearMessagesGroupDescription: WithGroupName,
    clearMessagesGroupDescriptionUpdated: WithGroupName,
    commitHashDesktop: WithHash,
+   communityBanUserDescription: WithName,
    communityJoinDescription: WithCommunityName,
    communityLeaveError: WithCommunityName,
+   communityUnbanUserDescription: WithName,
    contactDeleteDescription: WithName,
    conversationsDeleteDescription: WithName,
    conversationsEmpty: WithConversationName,
