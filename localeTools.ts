@@ -13,6 +13,7 @@ import {
   type TokensPluralAndArgs,
   type TokensSimpleAndArgs,
 } from './generated/locales';
+import { devSimpleNoArgs, type TokenDevNoArgs } from './devStrings';
 
 // NOTE: this forces a plural string to use the "1" variant
 export const PLURAL_COUNT_ONE = 1;
@@ -86,7 +87,7 @@ type MergedTokenWithArgs = TokenPluralWithArgs | TokenSimpleWithArgs;
 /**
  * Those are all of the tokens we can use in the localizer, with or without args, plurals or not.
  */
-export type MergedLocalizerTokens = MergedTokenWithArgs | TokenSimpleNoArgs;
+export type MergedLocalizerTokens = MergedTokenWithArgs | TokenSimpleNoArgs | TokenDevNoArgs;
 
 let localeInUse: CrowdinLocale = 'en';
 
@@ -131,6 +132,10 @@ export function isSimpleTokenWithArgs(token: string): token is TokenSimpleWithAr
 
 export function isPluralToken(token: string): token is TokenPluralWithArgs {
   return token in enPlurals;
+}
+
+export function isDevTokenNoArgs(token: string): token is TokenDevNoArgs {
+  return token in devSimpleNoArgs;
 }
 
 export function isTokenWithArgs(token: string): token is MergedTokenWithArgs {
@@ -238,6 +243,9 @@ export function getRawMessage<T extends MergedLocalizerTokens>(
   const { token } = details;
   const args = messageArgsToArgsOnly(details);
   try {
+    if (isDevTokenNoArgs(token)) {
+      return devSimpleNoArgs[token];
+    }
     if (isSimpleTokenNoArgs(token)) {
       return getSimpleStringNoArgs(token, crowdinLocale);
     }
@@ -400,6 +408,10 @@ export class LocalizedStringBuilder<T extends MergedLocalizerTokens> extends Str
     try {
       if (this.renderStringAsToken) {
         return this.token;
+      }
+
+      if (isDevTokenNoArgs(this.token)) {
+        return devSimpleNoArgs[this.token];
       }
 
       if (isSimpleTokenNoArgs(this.token)) {
