@@ -578,7 +578,7 @@ export const enSimpleNoArgs = {
   noteToSelfEmpty: 'You have no messages in Note to Self.',
   noteToSelfHide: 'Hide Note to Self',
   noteToSelfHideDescription: 'Are you sure you want to hide Note to Self?',
-  noteToSelfOpe: 'Open Note to Self',
+  noteToSelfOpen: 'Open Note to Self',
   notificationDisplay: 'Notification Display',
   notificationSenderNameAndPreview: 'Display the sender\'s name and a preview of the message content.',
   notificationSenderNameOnly: 'Display only the sender\'s name without any message content.',

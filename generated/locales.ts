@@ -624,7 +624,7 @@ export type TokenSimpleNoArgs =
   'noteToSelfEmpty' |
   'noteToSelfHide' |
   'noteToSelfHideDescription' |
-  'noteToSelfOpe' |
+  'noteToSelfOpen' |
   'notificationDisplay' |
   'notificationSenderNameAndPreview' |
   'notificationSenderNameOnly' |
