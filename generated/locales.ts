@@ -291,6 +291,8 @@ export type TokenSimpleNoArgs =
   'contentDescriptionQuoteThumbnail' |
   'contentDescriptionStartConversation' |
   'contentNotificationDescription' |
+  'conversationNavigate' |
+  'conversationSettings' |
   'conversationsAddToHome' |
   'conversationsAddedToHome' |
   'conversationsAudioMessages' |
@@ -435,6 +437,7 @@ export type TokenSimpleNoArgs =
   'feedbackDescription' |
   'file' |
   'files' |
+  'focusTextArea' |
   'followSystemSettings' |
   'forever' |
   'from' |
@@ -507,6 +510,7 @@ export type TokenSimpleNoArgs =
   'invalidShortcut' |
   'inviteNewMemberGroupNoLink' |
   'join' |
+  'keyboardShortcuts' |
   'later' |
   'launchOnStartDescriptionDesktop' |
   'launchOnStartDesktop' |
@@ -620,6 +624,7 @@ export type TokenSimpleNoArgs =
   'noteToSelfEmpty' |
   'noteToSelfHide' |
   'noteToSelfHideDescription' |
+  'noteToSelfOpe' |
   'notificationDisplay' |
   'notificationSenderNameAndPreview' |
   'notificationSenderNameOnly' |
@@ -679,6 +684,7 @@ export type TokenSimpleNoArgs =
   'onsErrorNotRecognized' |
   'onsErrorUnableToSearch' |
   'open' |
+  'openMessageContextMenu' |
   'openSettings' |
   'openSurvey' |
   'other' |
@@ -929,6 +935,7 @@ export type TokenSimpleNoArgs =
   'runSessionBackground' |
   'runSessionBackgroundDescription' |
   'save' |
+  'saveMessageAttachment' |
   'saved' |
   'savedMessages' |
   'saving' |
@@ -1009,6 +1016,9 @@ export type TokenSimpleNoArgs =
   'theError' |
   'theReturn' |
   'themePreview' |
+  'toggleEmojiPicker' |
+  'toggleReactionBarMessage' |
+  'toggleReplyMessage' |
   'tokenNameLong' |
   'tokenNameShort' |
   'tooltipBlindedIdCommunities' |
@@ -1052,6 +1062,7 @@ export type TokenSimpleNoArgs =
   'urlOpenDescriptionAlternative' |
   'usdNameShort' |
   'useFastMode' |
+  'userSettings' |
   'video' |
   'videoErrorPlay' |
   'view' |
