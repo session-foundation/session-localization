@@ -1580,7 +1580,7 @@ export type TokensSimpleAndArgs = {
    proRefundAccountDevice: { device_type: string, platform_account: string },
    proRefundNextSteps: { platform: string },
    proRefundRequestStorePolicies: { platform: string },
-   proRefundSupport: { platform: string },
+   proRefundSupport: WithIcon & { platform: string },
    proRefundingDescription: { platform: string, platform_store: string },
    proRenewDesktopLinked: { platform_store: string, platform_store_other: string },
    proRenewPinFiveConversations: WithLimit,
