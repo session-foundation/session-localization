@@ -57,6 +57,10 @@ type WithPrice = {price: string};
 type WithPercent = {percent: string};
 type WithMonthlyPrice = {monthly_price: string};
 type WithBuildVariant = {build_variant: string};
+type WithActivationType = {activation_type: string};
+type WithEntity = {entity: string};
+type WithSelectedPlanLengthSingular = {selected_plan_length_singular: string};
+type WithSelectedPlanLength = {selected_plan_length: string};
 
 /** Plural form keys */
 export type PluralForm = 'zero' | 'one' | 'two' | 'few' | 'many' | 'other';
@@ -1597,11 +1601,11 @@ export type TokensSimpleAndArgs = {
    proRenewPinFiveConversations: WithLimit,
    proRenewTosPrivacy: WithIcon,
    proRenewingNoAccessBilling: WithPlatformStore & WithPlatformStoreOther & WithBuildVariant & WithIcon,
-   proTosDescription: WithActionType & { activation_type: string, entity: string },
+   proTosDescription: WithActionType & WithActivationType & WithEntity,
    proTosPrivacy: WithIcon,
    proUnsuccessfulRenewalDescription: WithPlatformAccount & WithPlatformStore,
-   proUpdateAccessDescription: WithCurrentPlanLength & WithDate & { selected_plan_length_singular: string, selected_plan_length: string },
-   proUpdateAccessExpireDescription: WithDate & { selected_plan_length: string },
+   proUpdateAccessDescription: WithCurrentPlanLength & WithSelectedPlanLengthSingular & WithDate & WithSelectedPlanLength,
+   proUpdateAccessExpireDescription: WithDate & WithSelectedPlanLength,
    proUpgradeDesktopLinked: WithPlatformStore & WithPlatformStoreOther,
    proUpgradeNoAccessBilling: WithPlatformStore & WithPlatformStoreOther & WithBuildVariant & WithIcon,
    proUpgradingTosPrivacy: WithIcon,
