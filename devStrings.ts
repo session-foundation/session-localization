@@ -39,6 +39,8 @@ export const devSimpleNoArgs = {
   expirationDurationDev: 'Expiration Duration:',
   disappearsDev: 'Disappears:',
   codePointsDev: 'Code Points:',
+  debugModeEnabledToastDev: 'Debug mode enabled!',
+  debugModeDisabledToastDev: 'Debug mode disabled!',
 } as const;
 
 export type TokenDevNoArgs = keyof typeof devSimpleNoArgs;
