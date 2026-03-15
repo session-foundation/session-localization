@@ -86,6 +86,7 @@ export type TokenSimpleNoArgs =
   'add' |
   'addAdminSingular' |
   'addAdminsDescription' |
+  'admin' |
   'adminCannotBeDemoted' |
   'adminCannotBeRemoved' |
   'adminPromote' |
@@ -189,6 +190,7 @@ export type TokenSimpleNoArgs =
   'authenticateNotAccessed' |
   'authenticateToOpen' |
   'back' |
+  'banAndUnbanUsers' |
   'banDeleteAll' |
   'banErrorFailed' |
   'banUnbanErrorFailed' |
@@ -242,6 +244,7 @@ export type TokenSimpleNoArgs =
   'change' |
   'changePasswordFail' |
   'changePasswordModalDescription' |
+  'changeScope' |
   'changeSetting' |
   'checkingProStatus' |
   'checkingProStatusContinue' |
@@ -271,6 +274,7 @@ export type TokenSimpleNoArgs =
   'close' |
   'closeApp' |
   'closeWindow' |
+  'communitUrlJoinScanned' |
   'communityBanDeleteDescription' |
   'communityBanDescription' |
   'communityDescriptionEnter' |
@@ -286,11 +290,15 @@ export type TokenSimpleNoArgs =
   'communityJoined' |
   'communityJoinedAlready' |
   'communityLeave' |
+  'communityModModeratorCannotManage' |
+  'communityModOtherBlindedId' |
+  'communityModSelfManagement' |
   'communityNameEnter' |
   'communityNameEnterPlease' |
   'communityUnknown' |
   'communityUrl' |
   'communityUrlCopy' |
+  'communityUrlJoinEntered' |
   'confirm' |
   'confirmPromotion' |
   'confirmPromotionDescription' |
@@ -340,6 +348,7 @@ export type TokenSimpleNoArgs =
   'creatingCall' |
   'currentBilling' |
   'currentPassword' |
+  'currentRole' |
   'cut' |
   'darkMode' |
   'databaseErrorClearDataWarning' |
@@ -371,7 +380,9 @@ export type TokenSimpleNoArgs =
   'deleteMessageDeviceOnly' |
   'deleteMessageDevicesAll' |
   'deleteMessageEveryone' |
+  'deleteMessagesAndReactions' |
   'deleteMessagesDescriptionEveryone' |
+  'deleteTheirMessages' |
   'deleting' |
   'developerToolsToggle' |
   'deviceNotificationSettings' |
@@ -415,6 +426,7 @@ export type TokenSimpleNoArgs =
   'downloading' |
   'draft' |
   'edit' |
+  'editCommunityDetails' |
   'emojiAndSymbols' |
   'emojiCategoryActivities' |
   'emojiCategoryAnimals' |
@@ -462,6 +474,8 @@ export type TokenSimpleNoArgs =
   'giphyWarningDescription' |
   'giveFeedback' |
   'giveFeedbackDescription' |
+  'globalSearchAccountId' |
+  'globalSearchUrlJoinCommunity' |
   'groupAddMemberMaximum' |
   'groupCreate' |
   'groupCreateErrorNoMembers' |
@@ -486,6 +500,7 @@ export type TokenSimpleNoArgs =
   'groupMembers' |
   'groupMembersNone' |
   'groupName' |
+  'groupNameContainedUrlJoinCommunity' |
   'groupNameEnter' |
   'groupNameEnterPlease' |
   'groupNameEnterShorter' |
@@ -525,6 +540,7 @@ export type TokenSimpleNoArgs =
   'invalidShortcut' |
   'inviteNewMemberGroupNoLink' |
   'join' |
+  'joinThisCommunity' |
   'keyboardShortcuts' |
   'later' |
   'launchOnStartDescriptionDesktop' |
@@ -566,9 +582,15 @@ export type TokenSimpleNoArgs =
   'manageAdmins' |
   'manageMembers' |
   'managePro' |
+  'manageRole' |
+  'manageRoles' |
+  'manageSelf' |
+  'manageUser' |
+  'manageYourRole' |
   'max' |
   'maybeLater' |
   'media' |
+  'member' |
   'membersAddAccountIdOrOns' |
   'membersGroupPromotionAcceptInvite' |
   'membersInvite' |
@@ -617,9 +639,11 @@ export type TokenSimpleNoArgs =
   'messageVoiceSlideToCancel' |
   'messages' |
   'minimize' |
+  'missingServerWideAdminPermissions' |
   'modalMessageCharacterDisplayTitle' |
   'modalMessageCharacterTooLongTitle' |
   'modalMessageTooLongTitle' |
+  'moderator' |
   'networkName' |
   'newPassword' |
   'next' |
@@ -699,6 +723,7 @@ export type TokenSimpleNoArgs =
   'onsErrorNotRecognized' |
   'onsErrorUnableToSearch' |
   'open' |
+  'openCommunity' |
   'openMessageContextMenu' |
   'openSettings' |
   'openSurvey' |
@@ -975,6 +1000,7 @@ export type TokenSimpleNoArgs =
   'sendingCallOffer' |
   'sendingConnectionCandidates' |
   'sent' |
+  'serverWide' |
   'sessionAppearance' |
   'sessionClearData' |
   'sessionConversations' |
@@ -1031,6 +1057,7 @@ export type TokenSimpleNoArgs =
   'theError' |
   'theReturn' |
   'themePreview' |
+  'thisCommunity' |
   'toggleEmojiPicker' |
   'toggleReactionBarMessage' |
   'toggleReplyMessage' |
@@ -1092,6 +1119,7 @@ export type TokenSimpleNoArgs =
   'you' |
   'yourCpuIsUnsupportedSSE42' |
   'yourRecoveryPassword' |
+  'yourRole' |
   'zoomFactor' |
   'zoomFactorDescription';
 
@@ -1148,7 +1176,11 @@ export type TokenSimpleWithArgs =
   'communityBanUserDescription' |
   'communityJoinDescription' |
   'communityLeaveError' |
+  'communityModLegacyHostedServer' |
+  'communityReadOnly' |
   'communityUnbanUserDescription' |
+  'communityUrlOpenEntered' |
+  'communityUrlOpenScanned' |
   'contactDeleteDescription' |
   'conversationsDeleteDescription' |
   'conversationsEmpty' |
@@ -1216,6 +1248,7 @@ export type TokenSimpleWithArgs =
   'groupMemberRemoveFailed' |
   'groupMemberRemoveFailedMultiple' |
   'groupMemberRemoveFailedOther' |
+  'groupNameContainedUrlOpenCommunity' |
   'groupNameNew' |
   'groupNoMessages' |
   'groupOnlyAdmin' |
@@ -1232,6 +1265,7 @@ export type TokenSimpleWithArgs =
   'groupRemovedYouMultiple' |
   'groupRemovedYouTwo' |
   'inviteNewMemberGroupLink' |
+  'joinedCommunityOpen' |
   'legacyGroupBeforeDeprecationAdmin' |
   'legacyGroupBeforeDeprecationMember' |
   'legacyGroupMemberNew' |
@@ -1251,6 +1285,11 @@ export type TokenSimpleWithArgs =
   'messageVoiceSnippetGroup' |
   'modalMessageCharacterTooLongDescription' |
   'modalMessageTooLongDescription' |
+  'nameAdminCommunities' |
+  'nameAdminCommunity' |
+  'nameAdminGroup' |
+  'nameModeratorCommunities' |
+  'nameModeratorCommunity' |
   'nicknameDescription' |
   'noteTosPrivacyPolicy' |
   'notificationsIosGroup' |
@@ -1326,6 +1365,7 @@ export type TokenSimpleWithArgs =
   'searchMatchesNoneSpecific' |
   'sessionNetworkDataPrice' |
   'sessionNetworkDescription' |
+  'setIcon' |
   'systemInformationDesktop' |
   'tooltipAccountIdVisible' |
   'updateDownloading' |
@@ -1441,7 +1481,11 @@ export type TokensSimpleAndArgs = {
    communityBanUserDescription: WithName,
    communityJoinDescription: WithCommunityName,
    communityLeaveError: WithCommunityName,
+   communityModLegacyHostedServer: WithIcon,
+   communityReadOnly: WithIcon,
    communityUnbanUserDescription: WithName,
+   communityUrlOpenEntered: WithCommunityName,
+   communityUrlOpenScanned: WithCommunityName,
    contactDeleteDescription: WithName,
    conversationsDeleteDescription: WithName,
    conversationsEmpty: WithConversationName,
@@ -1509,6 +1553,7 @@ export type TokensSimpleAndArgs = {
    groupMemberRemoveFailed: WithName & WithGroupName,
    groupMemberRemoveFailedMultiple: WithName & WithCount & WithGroupName,
    groupMemberRemoveFailedOther: WithName & WithOtherName & WithGroupName,
+   groupNameContainedUrlOpenCommunity: WithCommunityName,
    groupNameNew: WithGroupName,
    groupNoMessages: WithGroupName,
    groupOnlyAdmin: WithGroupName,
@@ -1525,6 +1570,7 @@ export type TokensSimpleAndArgs = {
    groupRemovedYouMultiple: WithCount,
    groupRemovedYouTwo: WithOtherName,
    inviteNewMemberGroupLink: WithIcon,
+   joinedCommunityOpen: WithCommunityName,
    legacyGroupBeforeDeprecationAdmin: WithDate,
    legacyGroupBeforeDeprecationMember: WithDate,
    legacyGroupMemberNew: WithName,
@@ -1544,6 +1590,11 @@ export type TokensSimpleAndArgs = {
    messageVoiceSnippetGroup: WithAuthor & WithEmoji,
    modalMessageCharacterTooLongDescription: WithLimit,
    modalMessageTooLongDescription: WithLimit,
+   nameAdminCommunities: WithName,
+   nameAdminCommunity: WithName,
+   nameAdminGroup: WithName,
+   nameModeratorCommunities: WithName,
+   nameModeratorCommunity: WithName,
    nicknameDescription: WithName,
    noteTosPrivacyPolicy: WithActionType & WithIcon,
    notificationsIosGroup: WithName & WithConversationName,
@@ -1619,6 +1670,7 @@ export type TokensSimpleAndArgs = {
    searchMatchesNoneSpecific: WithQuery,
    sessionNetworkDataPrice: WithDateTime,
    sessionNetworkDescription: WithIcon,
+   setIcon: WithIcon,
    systemInformationDesktop: WithInformation,
    tooltipAccountIdVisible: WithName,
    updateDownloading: WithPercentLoader,
