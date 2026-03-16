@@ -386,6 +386,10 @@ export type TokenSimpleNoArgs =
   'deleting' |
   'developerToolsToggle' |
   'deviceNotificationSettings' |
+  'deviceSettingsCallNotifications' |
+  'deviceSettingsCommunityNotifications' |
+  'deviceSettingsConversationNotifications' |
+  'deviceSettingsGroupNotifications' |
   'dictationStart' |
   'disappearingMessages' |
   'disappearingMessagesDeleteType' |
@@ -667,6 +671,7 @@ export type TokenSimpleNoArgs =
   'notificationDisplay' |
   'notificationSenderNameAndPreview' |
   'notificationSenderNameOnly' |
+  'notificationSettings' |
   'notificationsAllMessages' |
   'notificationsContent' |
   'notificationsContentDescription' |
