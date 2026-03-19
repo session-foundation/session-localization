@@ -423,6 +423,10 @@ export type TokenSimpleNoArgs =
   'displayNameVisible' |
   'document' |
   'donate' |
+  'donateAppealName' |
+  'donateSessionAppealDescription' |
+  'donateSessionAppealReadMore' |
+  'donateSessionAppealTitle' |
   'donateSessionDescription' |
   'donateSessionHelp' |
   'done' |
