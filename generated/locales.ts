@@ -1119,6 +1119,7 @@ export type TokenSimpleNoArgs =
   'view' |
   'viewLess' |
   'viewMore' |
+  'viewReactions' |
   'waitFewMinutes' |
   'waitOneMoment' |
   'warning' |

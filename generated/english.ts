@@ -1058,6 +1058,7 @@ export const enSimpleNoArgs = {
   view: 'View',
   viewLess: 'View Less',
   viewMore: 'View More',
+  viewReactions: 'View Reactions',
   waitFewMinutes: 'This can take a few minutes.',
   waitOneMoment: 'One moment please...',
   warning: 'Warning',
