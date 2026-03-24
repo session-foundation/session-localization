@@ -676,6 +676,8 @@ export type TokenSimpleNoArgs =
   'notificationSenderNameAndPreview' |
   'notificationSenderNameOnly' |
   'notificationSettings' |
+  'notificationWarning' |
+  'notificationWarningDescription' |
   'notificationsAllMessages' |
   'notificationsContent' |
   'notificationsContentDescription' |
@@ -1054,6 +1056,7 @@ export type TokenSimpleNoArgs =
   'showLess' |
   'showNoteToSelf' |
   'showNoteToSelfDescription' |
+  'skip' |
   'spellChecker' |
   'stakingRewardPool' |
   'stickers' |
