@@ -273,7 +273,7 @@ export type TokenSimpleNoArgs =
   'clearOnThisDevice' |
   'close' |
   'closeApp' |
-  'closeOpenConversation' |
+  'closeFocusedConversation' |
   'closeWindow' |
   'communitUrlJoinScanned' |
   'communityBanDeleteDescription' |
