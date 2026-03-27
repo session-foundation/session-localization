@@ -41,6 +41,14 @@ export const devSimpleNoArgs = {
   codePointsDev: 'Code Points:',
   debugModeEnabledToastDev: 'Debug mode enabled!',
   debugModeDisabledToastDev: 'Debug mode disabled!',
+
+  // gifs
+  giphyIntegrationSectionTitle: 'Giphy Integration',
+  giphyIntegrationTitle: 'Enable Giphy Integration',
+  giphyIntegrationDescription: 'Enable giphy integration in Session',
+  giphyIntegrationModalDescription:
+    "Session will connect to Giphy's servers to provide gifs. You will not have full metadata protection.",
+  searchForGifs: 'Search for gifs',
 } as const;
 
 export type TokenDevNoArgs = keyof typeof devSimpleNoArgs;
