@@ -212,6 +212,7 @@ export const enSimpleNoArgs = {
   clearOnThisDevice: 'Clear on this device',
   close: 'Close',
   closeApp: 'Close App',
+  closeOpenConversation: 'Close Open Conversation',
   closeWindow: 'Close Window',
   communitUrlJoinScanned: 'Looks like you scanned a Community URL.<br/><br/>Would you like to join this Community?',
   communityBanDeleteDescription: 'This will ban the selected user from this Community and delete all their messages. Are you sure you want to continue?',
