@@ -458,6 +458,7 @@ export type TokenSimpleNoArgs =
   'enterPasswordTooltip' |
   'entityRangeproof' |
   'entityStf' |
+  'entityStfShort' |
   'errorCheckingProStatus' |
   'errorConnection' |
   'errorCopyAndQuit' |
@@ -473,6 +474,8 @@ export type TokenSimpleNoArgs =
   'feedbackDescription' |
   'file' |
   'files' |
+  'finalAppeal' |
+  'finalAppealDescription' |
   'focusTextArea' |
   'followSystemSettings' |
   'forever' |
@@ -939,6 +942,7 @@ export type TokenSimpleNoArgs =
   'rateSessionApp' |
   'rateUs' |
   'read' |
+  'readMoreCapital' |
   'readReceipts' |
   'readReceiptsDescription' |
   'received' |
