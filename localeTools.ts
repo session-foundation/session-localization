@@ -54,7 +54,13 @@ function withClause(error: unknown) {
   return '';
 }
 
-function stringifyError(error: unknown): string {
+function stringifyError(error: unknown, msgOnly = false): string {
+  if (msgOnly) {
+    if (error && typeof error === 'object' && 'message' in error) {
+      return String(error.message);
+    }
+    return String(error);
+  }
   if (error instanceof Error && error.stack) {
     return error.stack + withClause(error);
   }
@@ -279,7 +285,7 @@ export function getRawMessage<T extends MergedLocalizerTokens>(
 
     return pluralString.replaceAll('#', `${num}`);
   } catch (error) {
-    log(stringifyError(error));
+    log(stringifyError(error, true));
     return token;
   }
 }
@@ -364,7 +370,7 @@ export class LocalizedStringBuilder<T extends MergedLocalizerTokens> extends Str
 
       return str;
     } catch (error) {
-      log(stringifyError(error));
+      log(stringifyError(error, true));
       return this.token;
     }
   }
@@ -427,7 +433,7 @@ export class LocalizedStringBuilder<T extends MergedLocalizerTokens> extends Str
 
       return this.resolvePluralString();
     } catch (error) {
-      log(stringifyError(error));
+      log(stringifyError(error, true));
       return this.token;
     }
   }
