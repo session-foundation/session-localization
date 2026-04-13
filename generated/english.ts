@@ -516,7 +516,6 @@ export const enSimpleNoArgs = {
   linkPreviewsSendModalDescription: 'You will not have full metadata protection when sending link previews.',
   linkPreviewsTurnedOff: 'Link Previews Are Off',
   linkPreviewsTurnedOffDescription: 'Session must contact linked websites to generate previews of links you send and receive.<br/><br/>You can turn them on in Session\'s settings.',
-
   links: 'Links',
   loadAccount: 'Load Account',
   loadAccountProgressMessage: 'Loading your account',
