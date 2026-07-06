@@ -729,6 +729,8 @@ export type TokenSimpleNoArgs =
   'onboardingPrivacy' |
   'onboardingTos' |
   'onboardingTosPrivacy' |
+  'ongoingAppeal' |
+  'ongoingAppealDescription' |
   'onionRoutingPath' |
   'onionRoutingPathDescription' |
   'onionRoutingPathDestination' |

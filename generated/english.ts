@@ -668,6 +668,8 @@ export const enSimpleNoArgs = {
   onboardingPrivacy: 'Privacy Policy',
   onboardingTos: 'Terms of Service',
   onboardingTosPrivacy: 'By using this service, you agree to our <b>Terms of Service</b> and <b>Privacy Policy</b>',
+  ongoingAppeal: 'New Hope for Session',
+  ongoingAppealDescription: 'When it looked like Session might disappear, you stepped up.<br/><br/>Your donations have given the Session Technology Foundation (STF) enough funding to enable a small team of contributors to maintain the app.<br/><br/>Right now, the focus is keeping Session secure, stable, and online.<br/><br/>Your donations can help support Session in this critical time.  Additional donations may allow for more developers to be hired and help deliver the features needed to advance Session faster.',
   onionRoutingPath: 'Path',
   onionRoutingPathDescription: 'Session hides your IP by routing your messages through multiple service nodes in Session\'s decentralized network. This is your current path:',
   onionRoutingPathDestination: 'Destination',
