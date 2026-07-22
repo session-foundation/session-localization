@@ -924,6 +924,19 @@ export type TokenSimpleNoArgs =
   'proUpgradingAction' |
   'proUpgradingTo' |
   'proUserProfileModalCallToAction' |
+  'pro_error_expired' |
+  'pro_error_not_subscribed' |
+  'pro_error_revoked' |
+  'pro_error_stale_request' |
+  'pro_error_unknown_payment' |
+  'pro_provider_app_store_account' |
+  'pro_provider_app_store_device' |
+  'pro_provider_app_store_platform' |
+  'pro_provider_app_store_store' |
+  'pro_provider_google_play_account' |
+  'pro_provider_google_play_device' |
+  'pro_provider_google_play_platform' |
+  'pro_provider_google_play_store' |
   'profile' |
   'profileDisplayPicture' |
   'profileDisplayPictureRemoveError' |
@@ -1640,11 +1653,11 @@ export type TokensSimpleAndArgs = {
    proAccessActivatedNotAuto: WithDate,
    proAccessActivatesAuto: WithCurrentPlanLength & WithDate,
    proAccessExpireDate: WithDate,
-   proAccessRenewDesktop: WithPlatformStore & WithPlatformStoreOther & WithIcon,
+   proAccessRenewDesktop: WithIcon & { pro_stores: string },
    proAccessRenewPlatformStoreWebsite: WithPlatformStore & WithPlatformAccount,
    proAccessRenewPlatformWebsite: WithPlatform & WithPlatformAccount,
    proAccessSignUp: WithPlatformStore & WithPlatformAccount,
-   proAccessUpgradeDesktop: WithPlatformStore & WithPlatformStoreOther & WithIcon,
+   proAccessUpgradeDesktop: WithIcon & { pro_stores: string },
    proAllSetDescription: WithDate,
    proAutoRenewTime: WithTime,
    proBilledAnnually: WithPrice,
@@ -1668,17 +1681,17 @@ export type TokensSimpleAndArgs = {
    proRefundRequestStorePolicies: WithPlatform,
    proRefundSupport: WithPlatform & WithIcon,
    proRefundingDescription: WithPlatform & WithPlatformStore,
-   proRenewDesktopLinked: WithPlatformStore & WithPlatformStoreOther,
+   proRenewDesktopLinked: { pro_stores: string },
    proRenewPinFiveConversations: WithLimit,
    proRenewTosPrivacy: WithIcon,
-   proRenewingNoAccessBilling: WithPlatformStore & WithPlatformStoreOther & WithBuildVariant & WithIcon,
+   proRenewingNoAccessBilling: WithBuildVariant & WithIcon & { pro_stores: string },
    proTosDescription: WithActionType & WithActivationType & WithEntity,
    proTosPrivacy: WithIcon,
    proUnsuccessfulRenewalDescription: WithPlatformAccount & WithPlatformStore,
    proUpdateAccessDescription: WithCurrentPlanLength & WithSelectedPlanLengthSingular & WithDate & WithSelectedPlanLength,
    proUpdateAccessExpireDescription: WithDate & WithSelectedPlanLength,
-   proUpgradeDesktopLinked: WithPlatformStore & WithPlatformStoreOther,
-   proUpgradeNoAccessBilling: WithPlatformStore & WithPlatformStoreOther & WithBuildVariant & WithIcon,
+   proUpgradeDesktopLinked: { pro_stores: string },
+   proUpgradeNoAccessBilling: WithBuildVariant & WithIcon & { pro_stores: string },
    proUpgradingTosPrivacy: WithIcon,
    processingRefundRequest: WithPlatform,
    rateSessionModalDescription: WithStoreVariant,
