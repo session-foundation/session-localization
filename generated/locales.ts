@@ -883,6 +883,7 @@ export type TokenSimpleNoArgs =
   'proNewInstallation' |
   'proOptionsRenewalSubtitle' |
   'proOptionsTwoRenewalSubtitle' |
+  'proPlanLifetime' |
   'proPlanRenewSupport' |
   'proReactivatingActivation' |
   'proRefundDescription' |
@@ -1355,9 +1356,6 @@ export type TokenSimpleWithArgs =
   'proAccessUpgradeDesktop' |
   'proAllSetDescription' |
   'proAutoRenewTime' |
-  'proBilledAnnually' |
-  'proBilledMonthly' |
-  'proBilledQuarterly' |
   'proCallToActionPinnedConversationsMoreThan' |
   'proCancellationDescription' |
   'proDiscountTooltip' |
@@ -1366,11 +1364,10 @@ export type TokenSimpleWithArgs =
   'proNewInstallationDescription' |
   'proNewInstallationUpgrade' |
   'proPercentOff' |
+  'proPlanBilledEvery' |
   'proPlanPlatformRefund' |
   'proPlanPlatformRefundLong' |
-  'proPriceOneMonth' |
-  'proPriceThreeMonths' |
-  'proPriceTwelveMonths' |
+  'proPlanPricePerMonth' |
   'proRefundAccountDevice' |
   'proRefundNextSteps' |
   'proRefundRequestStorePolicies' |
@@ -1660,9 +1657,6 @@ export type TokensSimpleAndArgs = {
    proAccessUpgradeDesktop: WithIcon & { pro_stores: string },
    proAllSetDescription: WithDate,
    proAutoRenewTime: WithTime,
-   proBilledAnnually: WithPrice,
-   proBilledMonthly: WithPrice,
-   proBilledQuarterly: WithPrice,
    proCallToActionPinnedConversationsMoreThan: WithLimit,
    proCancellationDescription: WithPlatformAccount,
    proDiscountTooltip: WithPercent,
@@ -1671,11 +1665,10 @@ export type TokensSimpleAndArgs = {
    proNewInstallationDescription: WithPlatformStore,
    proNewInstallationUpgrade: WithPlatformStore,
    proPercentOff: WithPercent,
+   proPlanBilledEvery: WithPrice & { plan_length: string },
    proPlanPlatformRefund: WithPlatformStore & WithPlatformAccount,
    proPlanPlatformRefundLong: WithPlatformStore,
-   proPriceOneMonth: WithMonthlyPrice,
-   proPriceThreeMonths: WithMonthlyPrice,
-   proPriceTwelveMonths: WithMonthlyPrice,
+   proPlanPricePerMonth: WithMonthlyPrice & { plan_length: string },
    proRefundAccountDevice: WithDeviceType & WithPlatformAccount,
    proRefundNextSteps: WithPlatform,
    proRefundRequestStorePolicies: WithPlatform,
