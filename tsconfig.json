@@ -5,7 +5,9 @@
     "lib": ["dom", "ES2023"],
     "strict": true,
     "skipLibCheck": true,
-    "noUnusedLocals": true,
+    // Off: generated/locales.ts emits a superset of `WithXxx` arg-shape types, some of which are
+    // unused for the current string set (e.g. WithPlatformStoreOther), which would trip TS6196.
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
