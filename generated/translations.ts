@@ -53162,6 +53162,9 @@ export const translationsSimpleNoArgs: Partial<Record<TranslationLocale, Partial
     deleting: 'Siliniyor',
     developerToolsToggle: 'Geliştirici Araçlarını Aç/Kapat',
     deviceNotificationSettings: 'Cihaz Bildirim Ayarları',
+    deviceSettingsCommunityNotifications: 'Topluluk bildirimleri için Cihaz Ayarlarını açın.',
+    deviceSettingsConversationNotifications: 'Sohbet bildirimleri için Cihaz Ayarlarını açın.',
+    deviceSettingsGroupNotifications: 'Grup bildirimleri için Cihaz Ayarlarını açın.',
     dictationStart: 'Dikteyi Başlat...',
     disappearingMessages: 'Kaybolan İletiler',
     disappearingMessagesDeleteType: 'Silme Türü',
@@ -75668,7 +75671,7 @@ export const translationsPlurals: Partial<Record<TranslationLocale, Partial<Reco
     },
     groupRemoveMessages: {
       one: 'Rimuovi l\'utente e i suoi messaggi',
-      other: 'Rimuovi gli utenti e i loro messaggi',
+      other: 'Rimuovi utenti e i loro messaggi',
     },
     groupRemoveUserOnly: {
       one: 'Rimuovi l\'utente ',

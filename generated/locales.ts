@@ -52,8 +52,9 @@ type WithPlatformStore = {platform_store: string};
 type WithDeviceType = {device_type: string};
 type WithActionType = {action_type: string};
 type WithCurrentPlanLength = {current_plan_length: string};
-type WithPlatformStoreOther = {platform_store_other: string};
+type WithProStores = {pro_stores: string};
 type WithPrice = {price: string};
+type WithPlanLength = {plan_length: string};
 type WithPercent = {percent: string};
 type WithMonthlyPrice = {monthly_price: string};
 type WithBuildVariant = {build_variant: string};
@@ -1650,11 +1651,11 @@ export type TokensSimpleAndArgs = {
    proAccessActivatedNotAuto: WithDate,
    proAccessActivatesAuto: WithCurrentPlanLength & WithDate,
    proAccessExpireDate: WithDate,
-   proAccessRenewDesktop: WithIcon & { pro_stores: string },
+   proAccessRenewDesktop: WithProStores & WithIcon,
    proAccessRenewPlatformStoreWebsite: WithPlatformStore & WithPlatformAccount,
    proAccessRenewPlatformWebsite: WithPlatform & WithPlatformAccount,
    proAccessSignUp: WithPlatformStore & WithPlatformAccount,
-   proAccessUpgradeDesktop: WithIcon & { pro_stores: string },
+   proAccessUpgradeDesktop: WithProStores & WithIcon,
    proAllSetDescription: WithDate,
    proAutoRenewTime: WithTime,
    proCallToActionPinnedConversationsMoreThan: WithLimit,
@@ -1665,26 +1666,26 @@ export type TokensSimpleAndArgs = {
    proNewInstallationDescription: WithPlatformStore,
    proNewInstallationUpgrade: WithPlatformStore,
    proPercentOff: WithPercent,
-   proPlanBilledEvery: WithPrice & { plan_length: string },
+   proPlanBilledEvery: WithPrice & WithPlanLength,
    proPlanPlatformRefund: WithPlatformStore & WithPlatformAccount,
    proPlanPlatformRefundLong: WithPlatformStore,
-   proPlanPricePerMonth: WithMonthlyPrice & { plan_length: string },
+   proPlanPricePerMonth: WithPlanLength & WithMonthlyPrice,
    proRefundAccountDevice: WithDeviceType & WithPlatformAccount,
    proRefundNextSteps: WithPlatform,
    proRefundRequestStorePolicies: WithPlatform,
    proRefundSupport: WithPlatform & WithIcon,
    proRefundingDescription: WithPlatform & WithPlatformStore,
-   proRenewDesktopLinked: { pro_stores: string },
+   proRenewDesktopLinked: WithProStores,
    proRenewPinFiveConversations: WithLimit,
    proRenewTosPrivacy: WithIcon,
-   proRenewingNoAccessBilling: WithBuildVariant & WithIcon & { pro_stores: string },
+   proRenewingNoAccessBilling: WithProStores & WithBuildVariant & WithIcon,
    proTosDescription: WithActionType & WithActivationType & WithEntity,
    proTosPrivacy: WithIcon,
    proUnsuccessfulRenewalDescription: WithPlatformAccount & WithPlatformStore,
    proUpdateAccessDescription: WithCurrentPlanLength & WithSelectedPlanLengthSingular & WithDate & WithSelectedPlanLength,
    proUpdateAccessExpireDescription: WithDate & WithSelectedPlanLength,
-   proUpgradeDesktopLinked: { pro_stores: string },
-   proUpgradeNoAccessBilling: WithBuildVariant & WithIcon & { pro_stores: string },
+   proUpgradeDesktopLinked: WithProStores,
+   proUpgradeNoAccessBilling: WithProStores & WithBuildVariant & WithIcon,
    proUpgradingTosPrivacy: WithIcon,
    processingRefundRequest: WithPlatform,
    rateSessionModalDescription: WithStoreVariant,
