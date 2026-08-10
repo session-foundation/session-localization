@@ -877,6 +877,7 @@ export const enSimpleNoArgs = {
   pro_provider_google_play_device: 'Android',
   pro_provider_google_play_platform: 'Google',
   pro_provider_google_play_store: 'Google Play Store',
+  pro_provider_stf_platform: 'Session Technology Foundation',
   profile: 'Profile',
   profileDisplayPicture: 'Display Picture',
   profileDisplayPictureRemoveError: 'Failed to remove display picture.',

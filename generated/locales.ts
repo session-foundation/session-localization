@@ -939,6 +939,7 @@ export type TokenSimpleNoArgs =
   'pro_provider_google_play_device' |
   'pro_provider_google_play_platform' |
   'pro_provider_google_play_store' |
+  'pro_provider_stf_platform' |
   'profile' |
   'profileDisplayPicture' |
   'profileDisplayPictureRemoveError' |
