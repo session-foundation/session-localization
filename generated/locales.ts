@@ -916,10 +916,12 @@ export type TokenSimpleNoArgs =
   'proStatusRefreshNetworkError' |
   'proStatusRenewError' |
   'proSupportDescription' |
+  'proThanksForSupporting' |
   'proUnlimitedPins' |
   'proUnlimitedPinsDescription' |
   'proUpdatingAction' |
   'proUpgradeAccess' |
+  'proUpgradeAgainToSupport' |
   'proUpgradeOption' |
   'proUpgradeOptionsTwo' |
   'proUpgraded' |
