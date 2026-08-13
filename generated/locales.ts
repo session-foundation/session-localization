@@ -921,7 +921,6 @@ export type TokenSimpleNoArgs =
   'proUnlimitedPinsDescription' |
   'proUpdatingAction' |
   'proUpgradeAccess' |
-  'proUpgradeAgainToSupport' |
   'proUpgradeOption' |
   'proUpgradeOptionsTwo' |
   'proUpgraded' |
