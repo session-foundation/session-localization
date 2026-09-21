@@ -136,5 +136,5 @@ export function matchLocale(tag: string): CrowdinLocale | null {
 
   const base = `${subtags[0]}-`.toLowerCase();
   const variants = crowdinLocales.filter(locale => locale.toLowerCase().startsWith(base));
-  return variants.length === 1 ? variants[0] : null;
+  return variants.length === 1 ? (variants[0] ?? null) : null;
 }
