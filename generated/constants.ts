@@ -4,7 +4,7 @@
 
 
 /** Right-to-left locale codes */
-export const rtlLocales = ['ar', 'fa', 'he', 'ps', 'ur'];
+export const rtlLocales = ['ar', 'bal', 'fa', 'he', 'ku', 'ps', 'ur'];
 
 /** All supported Crowdin locale codes */
 export const crowdinLocales = [
