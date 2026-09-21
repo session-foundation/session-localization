@@ -8,6 +8,7 @@ strings are localized and managed via our [Localization Platform](https://getses
 ## Structure
 
 - `localeTools.ts` - Main localization logic
+- `languageList.ts` - The language picker's list: names, flags, and matching a device's locale
 - `generated/` - Auto-generated translation files (updated by external codegen)
 - `index.ts` - Main export
 
