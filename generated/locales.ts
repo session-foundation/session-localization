@@ -360,6 +360,8 @@ export type TokenSimpleNoArgs =
   'databaseErrorUpdate' |
   'databaseOptimizing' |
   'debugLog' |
+  'debugModeDisabled' |
+  'debugModeEnabled' |
   'decline' |
   'delete' |
   'deleteAfterGroupFirstReleaseConfigOutdated' |
@@ -386,6 +388,7 @@ export type TokenSimpleNoArgs =
   'deleteMessagesDescriptionEveryone' |
   'deleteTheirMessages' |
   'deleting' |
+  'developerSettings' |
   'developerToolsToggle' |
   'deviceNotificationSettings' |
   'deviceSettingsCallNotifications' |
