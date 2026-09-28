@@ -62643,6 +62643,7 @@ export const translationsSimpleWithArgs: Partial<Record<TranslationLocale, Parti
     urlOpenDescription: 'Êtes-vous sûr de vouloir ouvrir cette adresse URL dans votre navigateur web ?<br/><br/><b>{url}</b>',
     viaPlatformWebsiteDescription: 'Modifiez votre abonnement en utilisant le compte {platform_account} avec lequel vous vous êtes inscrit, via le site web de <b><span>{platform}</span></b>.',
     viaStoreWebsite: 'Via le site Web {platform}',
+    viaStoreWebsiteDescription: 'Modifiez votre accès Pro en utilisant le {platform_account} que vous avez utilisé pour vous enregistrer, via le <b><span>site {platform_store}</span></b>.',
   },
   gl: {
     adminMorePromotedToAdmin: '<b>{name}</b> e <b>{count} máis</b> foron ascendidos a Admin.',
