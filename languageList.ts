@@ -4,11 +4,7 @@ import {
   rtlLocales,
   type CrowdinLocale,
 } from './generated/constants';
-import {
-  languageNames,
-  languageNamesInEnglish,
-  languageTerritories,
-} from './generated/languages';
+import { languageNames, languageNamesInEnglish, languageTerritories } from './generated/languages';
 
 /** Shown where a language has no country. An answer, not a missing one. */
 export const NO_FLAG = '🌐';
@@ -37,13 +33,12 @@ const NAME_OVERRIDES: Partial<Record<CrowdinLocale, { name: string; english: str
  */
 function flagFor(country: string): string {
   return String.fromCodePoint(
-    ...[...country.toUpperCase()].map(letter => 0x1f1e6 + letter.charCodeAt(0) - 65),
+    ...[...country.toUpperCase()].map(letter => 0x1f1e6 + letter.charCodeAt(0) - 65)
   );
 }
 
 export function languageFlag(locale: CrowdinLocale): string {
-  const country =
-    locale in FLAG_OVERRIDES ? FLAG_OVERRIDES[locale] : languageTerritories[locale];
+  const country = locale in FLAG_OVERRIDES ? FLAG_OVERRIDES[locale] : languageTerritories[locale];
   return country === null || country === undefined ? NO_FLAG : flagFor(country);
 }
 
@@ -88,7 +83,7 @@ export interface LanguageOption {
  * Sorted by the name as written rather than by code, with the reader's own collation rather than
  * a fixed one: the list mixes scripts and no single collation is right for all of them.
  */
-export const languageOptions: readonly LanguageOption[] = [...crowdinLocales]
+export const languageOptions: ReadonlyArray<LanguageOption> = [...crowdinLocales]
   .map(locale => ({
     locale,
     name: languageName(locale),
