@@ -650,6 +650,9 @@ export type TokenSimpleNoArgs =
   'messageStatusFailedToSync' |
   'messageStatusSyncing' |
   'messageUnread' |
+  'messageUnsupported' |
+  'messageUnsupportedBanner' |
+  'messageUnsupportedBannerLinkedDevice' |
   'messageVoice' |
   'messageVoiceErrorShort' |
   'messageVoiceSlideToCancel' |
