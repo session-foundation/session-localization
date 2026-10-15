@@ -20231,7 +20231,7 @@ export const translationsSimpleNoArgs: Partial<Record<TranslationLocale, Partial
     ongoingAppeal: 'Nova nada za Session',
     ongoingAppealDescription: 'Kad se činilo da bi Session mogao nestati, vi ste uskočili.<br/><br/>Vaše su donacije osigurale Session Technology Foundation (STF) dovoljno sredstava da omogući malom timu suradnika održavanje aplikacije.<br/><br/>Trenutačno je fokus na tome da Session ostane siguran, stabilan i dostupan na mreži.<br/><br/>Vaše donacije mogu pomoći podržati Session u ovom kritičnom razdoblju. Dodatne donacije mogle bi omogućiti zapošljavanje više razvojnih programera i pomoći u isporuci značajki potrebnih za brži napredak Session.',
     onionRoutingPath: 'Putanja',
-    onionRoutingPathDescription: 'Session skriva vaš IP usmjeravanjem vaših poruka kroz više uslužnih čvorova u Session decentraliziranoj mreži. Ovo je vaša trenutna putanja:',
+    onionRoutingPathDescription: 'Session skriva vašu IP adresu usmjeravanjem vaših poruka kroz više uslužnih čvorova u Session decentraliziranoj mreži. Ovo je vaša trenutna putanja:',
     onionRoutingPathDestination: 'Odredište',
     onionRoutingPathEntryNode: 'Ulazni čvor',
     onionRoutingPathUnknownCountry: 'Nepoznata država',
@@ -20375,7 +20375,7 @@ export const translationsSimpleNoArgs: Partial<Record<TranslationLocale, Partial
     updateApp: 'Ažuriranja aplikacije',
     updateDownloaded: 'Ažuriranje instalirano, kliknite za ponovno pokretanje',
     updateError: 'Nije moguće ažurirati',
-    updateErrorDescription: 'Session nije uspio ažurirati. Molimo idite na https://getsession.org/download i instalirajte novu verziju ručno, zatim kontaktirajte naš Centar za pomoć kako biste nas obavijestili o ovom problemu.',
+    updateErrorDescription: 'Session se nije uspijela ažurirati. Molimo idite na https://getsession.org/download i instalirajte novu verziju ručno, zatim kontaktirajte naš Centar za pomoć kako biste nas obavijestili o ovom problemu.',
     updateNewVersion: 'Dostupna je nova verzija Session, dodirnite za ažuriranje.',
     updateReleaseNotes: 'Idi na bilješke o izdanju',
     updateSession: 'Ažuriranje Session',
@@ -75081,8 +75081,8 @@ export const translationsPlurals: Partial<Record<TranslationLocale, Partial<Reco
   hr: {
     clearDataErrorDescription: {
       one: 'Podatke nije izbrisao {count} Service Node. ID uslužnog čvora: {service_node_id}.',
-      few: 'Podatke nije izbrisao {count} Service Node. ID-ovi uslužnih čvorova: {service_node_id}.',
-      other: 'Podatke nije izbrisao {count} Service Node. ID-ovi uslužnih čvorova: {service_node_id}.',
+      few: 'Podatke nije izbrisao {count} Service Node. ID-evi uslužnih čvorova: {service_node_id}.',
+      other: 'Podatke nije izbrisao {count} Service Node. ID-evi uslužnih čvorova: {service_node_id}.',
     },
     deleteMessage: {
       one: 'Izbriši poruku',
@@ -75100,9 +75100,9 @@ export const translationsPlurals: Partial<Record<TranslationLocale, Partial<Reco
       other: 'Neuspješno brisanje poruka',
     },
     emojiReactsCountOthers: {
-      one: 'I {count} osoba je reagirala {emoji} na ovu poruku.',
-      few: 'I {count} osobe su reagirale {emoji} na ovu poruku.',
-      other: 'I {count} osoba je reagiralo {emoji} na ovu poruku.',
+      one: '{count} osoba je reagirala sa {emoji} na ovu poruku.',
+      few: '{count} osobe su reagirale sa {emoji} na ovu poruku.',
+      other: '{count} osoba je reagiralo sa {emoji} na ovu poruku.',
     },
     groupRemoveMessages: {
       one: 'Ukloni korisnika i njegove poruke',
