@@ -23677,6 +23677,7 @@ export const translationsSimpleNoArgs: Partial<Record<TranslationLocale, Partial
     add: '追加',
     addAdminSingular: '管理者を追加',
     addAdminsDescription: '管理者に昇格させるユーザーのAccount IDを入力してください。<br/><br/>複数のユーザーを追加するには、各Account IDをカンマで区切って入力してください。一度に最大20件まで指定できます。',
+    admin: '管理者',
     adminCannotBeDemoted: '管理者は降格またはグループから削除できません。',
     adminCannotBeRemoved: 'アドミンを削除することはできません',
     adminPromote: 'アドミンを昇格',
