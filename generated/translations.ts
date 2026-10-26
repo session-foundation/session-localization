@@ -58405,6 +58405,7 @@ export const translationsSimpleNoArgs: Partial<Record<TranslationLocale, Partial
     conversationsDelete: '刪除對話',
     conversationsDeleted: '對話已刪除',
     conversationsEnter: '回車鍵',
+    conversationsEnterSends: '按 ENTER 發送訊息，SHIFT + ENTER 創建新行。',
     conversationsGroups: '群組',
     conversationsMessageTrimming: '訊息清理',
     conversationsMessageTrimmingTrimCommunities: '刪裁社群舊訊息',
@@ -58727,6 +58728,7 @@ export const translationsSimpleNoArgs: Partial<Record<TranslationLocale, Partial
     openSurvey: '開啟問卷',
     other: '其他',
     passwordChange: '變更密碼',
+    passwordChangeShortDescription: '更改 Session 的解鎖密碼。',
     passwordConfirm: '確認密碼',
     passwordCurrentIncorrect: '您目前的密碼不正確。',
     passwordEnter: '輸入密碼',
@@ -80763,6 +80765,9 @@ export const translationsPlurals: Partial<Record<TranslationLocale, Partial<Reco
     inviteFailedDescription: {
       other: '無法傳送邀請，您要再試一次嗎？',
     },
+    memberSelected: {
+      other: '{count} 管理員以選中',
+    },
     members: {
       other: '{count} 位成員',
     },
@@ -80783,6 +80788,9 @@ export const translationsPlurals: Partial<Record<TranslationLocale, Partial<Reco
     },
     modalMessageCharacterDisplayDescription: {
       other: '訊息最多限制 {limit} 個字元。您還剩下 {count} 個字元可以使用。',
+    },
+    promoteMember: {
+      other: '提升成員',
     },
     promotionFailed: {
       other: '晉升失敗',
