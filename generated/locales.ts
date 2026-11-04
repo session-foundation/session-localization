@@ -354,6 +354,7 @@ export type TokenSimpleNoArgs =
   'cut' |
   'darkMode' |
   'databaseErrorClearDataWarning' |
+  'databaseErrorClearDeviceWarning' |
   'databaseErrorGeneric' |
   'databaseErrorRestoreDataWarning' |
   'databaseErrorTimeout' |

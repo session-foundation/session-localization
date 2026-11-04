@@ -292,6 +292,7 @@ export const enSimpleNoArgs = {
   cut: 'Cut',
   darkMode: 'Dark Mode',
   databaseErrorClearDataWarning: 'Are you sure you want to delete all messages, attachments, and account data from this device and create a new account?',
+  databaseErrorClearDeviceWarning: 'This will delete all messages, attachments, and account data from this device.<br/><br/>Your account can only be restored with your Recovery Password. Without it, your account will be lost.',
   databaseErrorGeneric: 'A database error occurred.<br/><br/>Export your application logs to share for troubleshooting. If this is unsuccessful, reinstall Session and restore your account.',
   databaseErrorRestoreDataWarning: 'Are you sure you want to delete all messages, attachments, and account data from this device and restore your account from the network?',
   databaseErrorTimeout: 'We\'ve noticed Session is taking a long time to start.<br/><br/>You can continue to wait, export your device logs to share for troubleshooting, or try restarting Session.',
