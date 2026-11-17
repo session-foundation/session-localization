@@ -921,6 +921,7 @@ export const enSimpleNoArgs = {
   recoveryPasswordErrorLoad: 'An error occurred when trying to load your recovery password.<br/><br/>Please export your logs, then upload the file through the Session Help Desk to help resolve this issue.',
   recoveryPasswordErrorMessageGeneric: 'Please check your recovery password and try again.',
   recoveryPasswordErrorMessageIncorrect: 'Some of the words in your Recovery Password are incorrect. Please check and try again.',
+  recoveryPasswordErrorMessageOtherAccount: 'This device has messages from a different account. Restoring this account would make them unreachable. Enter that account’s recovery password to keep them.',
   recoveryPasswordErrorMessageShort: 'The Recovery Password you entered is not long enough. Please check and try again.',
   recoveryPasswordErrorTitle: 'Incorrect Recovery Password',
   recoveryPasswordExplanation: 'To load your account, enter your recovery password.',

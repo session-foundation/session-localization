@@ -983,6 +983,7 @@ export type TokenSimpleNoArgs =
   'recoveryPasswordErrorLoad' |
   'recoveryPasswordErrorMessageGeneric' |
   'recoveryPasswordErrorMessageIncorrect' |
+  'recoveryPasswordErrorMessageOtherAccount' |
   'recoveryPasswordErrorMessageShort' |
   'recoveryPasswordErrorTitle' |
   'recoveryPasswordExplanation' |
